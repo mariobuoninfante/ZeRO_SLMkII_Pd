@@ -1,0 +1,4 @@
+#N canvas 1 78 549 420 10;
+#X declare -path ./utils;
+#X obj 1 1 CORE;
+#X obj 6 428 declare -path ./utils;

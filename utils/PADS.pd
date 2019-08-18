@@ -1,0 +1,21 @@
+#N canvas 1 78 582 300 10;
+#X obj 85 28 notein;
+#X text 205 23 ignore NOTE OFF since it is not possible to send NOTE
+OFF from the HW when releasing the pad (see SL MkII user guide at page
+34) \;;
+#X obj 85 120 stripnote;
+#X obj 85 59 moses 36;
+#X obj 95 79 moses 44;
+#X obj 85 142 - 36;
+#X obj 85 164 pack;
+#X obj 85 216 outlet;
+#X text 83 236 pad_id+value \;;
+#X connect 0 0 3 0;
+#X connect 0 1 2 1;
+#X connect 2 0 5 0;
+#X connect 2 1 6 1;
+#X connect 3 0 2 0;
+#X connect 3 1 4 0;
+#X connect 4 0 2 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
