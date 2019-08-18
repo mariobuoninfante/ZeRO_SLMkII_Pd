@@ -1,3 +1,4 @@
 2019-08-18
 ---
+  - added ChucK script to test OSC
   - added OSC support - send only
