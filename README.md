@@ -7,12 +7,12 @@ This Pure Data patch allows to receive/send MIDI messages from/to the Novation Z
 2. select template 32: *Ableton*
 3. launch Pure Data
 4. select *SL MkII MIDI* port 2 for both MIDI input and output
-5. open *SL_MkII.pd*
+5. open *ZeRO_SLMkII.pd*
 6. this will automatically initialize the device (sometimes it takes a couple of seconds before this process terminates)
 7. start moving the controls on ZeRO SLMkII and check both the screens on the device and the patch
 
 ## About the patch
-*SL_MkII.pd* uses the abstractions in the *utils* folder.
+*ZeRO_SLMkII.pd* uses the abstractions in the *utils* folder.
 These are:
 * [ENCODER]: allows to intercept MIDI from single encoder and talks to [SCREENS] and [ENCODER_LEDS] to control relative LED ring - encoders can ahve different ranges (from 0 to *N* - since they sends delta)
 * [ENCODER_LEDS]: used to set encoder LED rings
