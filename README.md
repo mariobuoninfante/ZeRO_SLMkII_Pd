@@ -21,5 +21,19 @@ These are:
 * [KNOBS]: receives messages from the knobs
 * [PADS]: receives messages from pads - to be noted that only NOTE ON messages are received (for more info see SL MkII user guide at page 34)
 
+### Open Sound Control
+The patch uses [Open Sound Control](http://opensoundcontrol.org/) protocol to send messages over network.
+The default settings are:
+* IP:               localhost
+* port:             3000
+* address:          /ZeRO/*tag data*
+* tags and data (all numbers are floats - *value* is always expressed as a float in a range 0-1):    
+    * encoders: *enc end_id value*
+    * knobs: *knob end_id value*
+    * pads: *pad end_id value*
+    * buttons: *but end_id value*
+    * faders: *fad end_id value*
+
+
 # Links
 [ZeRO SLMkII user guide](https://customer.novationmusic.com/sites/customer/files/novation/downloads/4119/english108.pdf)

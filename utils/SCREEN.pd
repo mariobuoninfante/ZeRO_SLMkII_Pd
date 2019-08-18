@@ -53,11 +53,11 @@
 #X msg 599 509 32;
 #X obj 41 95 t a b;
 #X obj 41 46 route text clear float;
-#X text 546 7 PATCH ARGS \; \; 1 offset (0-7) \; 2 screen \; 3 text
-\; 4 (if needed - see below) float \; \; SCREENS \; \; 1 top left \;
-2 top right \; 3 bottom left \; 4 bottom right \; \; in order to display
-a number \; the 3rd arg must be '_float' \; and the 4th arg the number
-itself \;;
+#X text 546 7 PATCH ARGS \; \; 1 offset (0-7) - 9 chars per slot \;
+2 screen \; 3 text \; 4 (if needed - see below) float \; \; SCREENS
+\; \; 1 top left \; 2 top right \; 3 bottom left \; 4 bottom right
+\; \; in order to display a number \; the 3rd arg must be '_float'
+\; and the 4th arg the number itself \;;
 #X connect 0 0 1 0;
 #X connect 2 0 3 0;
 #X connect 3 0 22 0;
