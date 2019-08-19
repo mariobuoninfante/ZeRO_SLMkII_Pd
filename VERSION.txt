@@ -1,3 +1,9 @@
+---
+2019-08-19
+---
+  - fixed issue with OSC address - from "/ZeRo" to "/ZeRO"	
+
+---
 2019-08-18
 ---
   - added ChucK script to test OSC

@@ -90,8 +90,8 @@ link to screen \; 6 screen label \;;
 #X obj 741 236 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 615 258 spigot;
-#X obj 615 230 oscformat ZeRo enc;
 #X obj 741 214 r _OSC_offon;
+#X obj 615 230 oscformat ZeRO enc;
 #X connect 0 0 8 0;
 #X connect 1 0 11 0;
 #X connect 1 1 31 0;
@@ -125,18 +125,18 @@ link to screen \; 6 screen label \;;
 #X connect 15 0 26 0;
 #X connect 16 0 27 0;
 #X connect 17 0 28 0;
-#X connect 30 0 40 0;
-#X connect 31 0 40 0;
-#X connect 32 0 40 0;
-#X connect 33 0 40 0;
-#X connect 34 0 40 0;
-#X connect 35 0 40 0;
-#X connect 36 0 40 0;
-#X connect 37 0 40 0;
+#X connect 30 0 41 0;
+#X connect 31 0 41 0;
+#X connect 32 0 41 0;
+#X connect 33 0 41 0;
+#X connect 34 0 41 0;
+#X connect 35 0 41 0;
+#X connect 36 0 41 0;
+#X connect 37 0 41 0;
 #X connect 38 0 39 1;
 #X connect 39 0 29 0;
-#X connect 40 0 39 0;
-#X connect 41 0 38 0;
+#X connect 40 0 38 0;
+#X connect 41 0 39 0;
 #X coords 0 -1 1 1 325 25 2 50 350;
 #X restore 25 60 pd ENCODERS;
 #X obj 10 101 cnv 15 351 50 empty empty KNOBS 5 10 0 12 -233017 -66577
@@ -170,10 +170,10 @@ link to screen \; 6 screen label \;;
 #X obj 165 206 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 197 447 s \$0_CC_out;
-#X obj 195 206 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 195 206 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 227 497 s \$0_CC_out;
-#X obj 225 206 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 225 206 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 257 547 s \$0_CC_out;
 #X obj 15 226 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
@@ -197,7 +197,7 @@ link to screen \; 6 screen label \;;
 #X obj 195 226 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 227 707 s \$0_CC_out;
-#X obj 225 226 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 225 226 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 257 757 s \$0_CC_out;
 #X obj 77 425 pack 0 25 10;
@@ -558,7 +558,7 @@ link to screen \; 6 screen label \;;
 1;
 #X obj 555 126 r _OSC_offon;
 #X obj 532 318 s _OSC_from_pd;
-#X obj 532 292 oscformat ZeRo fad;
+#X obj 532 292 oscformat ZeRO fad;
 #X connect 0 0 20 0;
 #X connect 0 1 21 0;
 #X connect 0 2 22 0;
@@ -718,26 +718,26 @@ or displaying 'wrong' messages \;;
 #X obj 718 123 r _OSC_offon;
 #X obj 635 136 t l l;
 #X obj 685 219 s _OSC_from_pd;
-#X obj 685 193 oscformat ZeRo pad;
 #X obj 684 293 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 651 315 spigot;
 #X obj 684 271 r _OSC_offon;
 #X obj 651 367 s _OSC_from_pd;
-#X obj 651 341 oscformat ZeRo but;
+#X obj 685 193 oscformat ZeRO pad;
+#X obj 651 341 oscformat ZeRO but;
 #X connect 1 0 3 0;
 #X connect 8 0 29 0;
 #X connect 9 0 10 0;
 #X connect 9 1 11 0;
-#X connect 13 0 33 0;
+#X connect 13 0 32 0;
 #X connect 26 0 27 1;
-#X connect 27 0 31 0;
+#X connect 27 0 35 0;
 #X connect 28 0 26 0;
 #X connect 29 0 9 0;
 #X connect 29 1 27 0;
-#X connect 31 0 30 0;
-#X connect 32 0 33 1;
-#X connect 33 0 36 0;
-#X connect 34 0 32 0;
-#X connect 36 0 35 0;
+#X connect 31 0 32 1;
+#X connect 32 0 36 0;
+#X connect 33 0 31 0;
+#X connect 35 0 30 0;
+#X connect 36 0 34 0;
 #X coords 0 -1 1 1 530 400 2 2 5;
