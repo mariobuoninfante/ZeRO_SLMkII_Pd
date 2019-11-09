@@ -1,3 +1,7 @@
+2019-11-09
+---
+  - added object output - msg from various controls are routed there
+
 2019-08-28
 ---
   - added [s _ZeRO] to send OSC messages internally in Pd - useful to route msg to other patches

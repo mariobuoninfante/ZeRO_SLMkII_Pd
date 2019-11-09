@@ -1,4 +1,6 @@
-#N canvas 1 78 549 420 10;
+#N canvas 469 122 535 445 10;
 #X declare -path ./utils;
 #X obj 1 1 CORE;
-#X obj 6 428 declare -path ./utils;
+#X obj 401 408 declare -path ./utils;
+#X obj 1 408 print ZeRO SLMkII;
+#X connect 0 0 2 0;
