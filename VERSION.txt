@@ -1,3 +1,7 @@
+2020-01-04
+---
+  - encoders now only sends value when different from the current one
+
 2019-11-09
 ---
   - added object output - msg from various controls are routed there
